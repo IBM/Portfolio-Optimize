@@ -1,0 +1,41 @@
+asset,instrumentId,CUSIP,sector,geography,asset-class,risk-score,esg_Controversy,esg_Environmental,esg_Governance,esg_Social,esg_Sustainability,has_Tobacco,has_Alcohol,has_Gambling,has_Military,has_Fossil Fuels,Price
+JOHNSON CONTROLS INTERNATIONAL PLC,CX_IE00BY7QL619_NYQ,00BY7QL61,Industrials,Domestic,Equity,5,Average,Average,Low,High,Low,FALSE,FALSE,FALSE,FALSE,FALSE,44
+ALPHABET INC,CX_US02079KAA51_USD,02079KAA5,Information Technology,Domestic,Corporate Bonds,3,Low,Average,Average,Low,Average,FALSE,FALSE,FALSE,FALSE,FALSE,105.3916
+AMGEN INC,CX_US031162BG42_USD,031162BG4,Health Care,Domestic,Corporate Bonds,4,Average,Low,Low,High,Low,FALSE,FALSE,FALSE,FALSE,FALSE,106.485
+Amgen 5.15% 11/15/2041,CX_US031162BK53_USD,031162BK5,Health Care,Domestic,Corporate Bonds,3,High,Average,Low,High,Average,FALSE,FALSE,FALSE,FALSE,FALSE,116.0466
+AmSurg Corp 5.625% 07/15/2022,CX_US03232PAD06_USD,03232PAD0,Health Care,Domestic,Corporate Bonds,3,Average,High,Low,Average,Average,FALSE,FALSE,FALSE,FALSE,FALSE,104
+AUTOZONE INC,CX_US0533321024_NYQ,53332102,Consumer Discretionary,Domestic,Equity,7,Average,High,Low,Low,Average,FALSE,FALSE,FALSE,FALSE,FALSE,495.69
+BALL CORP,CX_US0584981064_NYQ,58498106,Materials,Domestic,Equity,5,Average,Average,Average,High,Average,FALSE,FALSE,FALSE,FALSE,FALSE,42.42
+CHIPOTLE MEXICAN GRILL INC,CX_US1696561059_NYQ,169656105,Consumer Discretionary,Domestic,Equity,4,Average,High,Low,Average,Low,FALSE,FALSE,FALSE,FALSE,FALSE,374.98
+COCA-COLA,CX_US1912161007_NYQ,191216100,Consumer Staples,Domestic,Equity,5,Average,Average,Average,Average,Low,FALSE,FALSE,FALSE,FALSE,FALSE,44.67
+ENTERPRISE PRODUCTS OPERATING LLC,CX_US29379VAY92_USD,29379VAY9,Energy,Domestic,Corporate Bonds,2,High,Low,High,High,Low,FALSE,FALSE,FALSE,FALSE,FALSE,99.5329
+EXXON MOBIL CORP,CX_US30231GAN25_USD,30231GAN2,Energy,Domestic,Corporate Bonds,3,Low,Low,High,High,Low,FALSE,FALSE,FALSE,FALSE,TRUE,96.3533
+INTUITIVE SURGICAL INC,CX_US46120E6023_NSQ,46120E602,Health Care,Domestic,Equity,6,Average,Average,Low,Average,Average,FALSE,FALSE,FALSE,FALSE,FALSE,946.65
+iShares Gold Trust,CX_US4642851053_NYQ,464285105,Commodity,Domestic,Commodities,5,Low,Average,Low,High,Low,FALSE,FALSE,FALSE,FALSE,FALSE,11.95
+iShares TIPS Bond,CX_US4642871762_NYQ,464287176,Government,Domestic,Government Bonds,2,Low,High,Low,Average,High,FALSE,FALSE,FALSE,FALSE,FALSE,113.6
+iShares Core S&P 500,CX_US4642872000_NYQ,464287200,Diversified,Domestic,Equity,5,High,High,Average,Average,High,TRUE,FALSE,FALSE,FALSE,FALSE,247.36
+iShares iBoxx $ Investment Grade Corporate Bond,CX_US4642872422_NYQ,464287242,Diversified,Domestic,Corporate Bonds,3,High,Low,Average,High,High,TRUE,FALSE,FALSE,FALSE,FALSE,121.2
+iShares 20+ Year Treasury Bond,CX_US4642874329_NYQ,464287432,Government,Domestic,Government Bonds,1,Low,Low,High,Low,Low,FALSE,FALSE,FALSE,FALSE,FALSE,124.75
+iShares Core S&P Mid-Cap ETF,CX_US4642874402_NYQ,464287440,Diversified,Domestic,Equity,6,Low,High,High,High,Average,TRUE,FALSE,FALSE,FALSE,FALSE,106.92
+iShares 1-3 Year Treasury Bond,CX_US4642874576_NYQ,464287457,Government,Domestic,Government Bonds,1,Low,High,High,High,Low,FALSE,FALSE,FALSE,FALSE,FALSE,84.54
+iShares MSCI EAFE,CX_US4642874659_NYQ,464287465,Diversified,Domestic,Equity,7,Low,Low,Average,High,Low,TRUE,TRUE,TRUE,TRUE,TRUE,66.25
+iShares Core S&P Mid-Cap,CX_US4642875078_NYQ,464287507,Diversified,Domestic,Equity,6,Low,Average,High,Average,Low,TRUE,TRUE,TRUE,TRUE,TRUE,175.68
+iShares Russell 1000 Value,CX_US4642875987_NYQ,464287598,Diversified,Domestic,Equity,7,Average,Average,Low,High,Low,TRUE,TRUE,TRUE,TRUE,TRUE,116.25
+iShares Russell 1000 Growth ETF,CX_US4642876142_NYQ,464287614,Diversified,Domestic,Equity,7,Low,Average,Average,Low,Average,TRUE,TRUE,TRUE,TRUE,TRUE,121.7
+iShares Core S&P Small-Cap ETF,CX_US4642878049_NYQ,464287804,Diversified,Domestic,Equity,8,Average,Low,Low,High,Low,TRUE,TRUE,TRUE,TRUE,TRUE,70.69
+Shares J.P. Morgan USD Emerging Markets Bond,CX_US4642882819_NYQ,464288281,Diversified,Domestic,Corporate Bonds,8,High,Average,Low,High,Average,TRUE,TRUE,TRUE,TRUE,TRUE,114.85
+iShares National Muni Bond ETF,CX_US4642884146_NYQ,464288414,Municipal,Domestic,Municipal,2,Average,High,Low,Average,Average,FALSE,FALSE,FALSE,FALSE,FALSE,110.57
+iShares iBoxx $ High Yield Corporate Bond ETF,CX_US4642885135_NYQ,464288513,Diversified,Domestic,Corporate Bonds,4,Average,High,Low,Low,Average,FALSE,FALSE,FALSE,FALSE,FALSE,88.6
+iShares MBS ETF ,CX_US4642885887_NYQ,464288588,Real Estate,Domestic,Mortgages,3,Average,Average,Average,High,Average,FALSE,FALSE,FALSE,FALSE,FALSE,106.99
+iShares 1-3 Year Credit Bond,CX_US4642886463_NYQ,464288646,Diversified,Domestic,Corporate Bonds,4,Average,High,Low,Average,Low,FALSE,FALSE,FALSE,FALSE,TRUE,105.4
+iShares 3-7 Year Treasury Bond,CX_US4642886612_NYQ,464288661,Government,Domestic,Government Bonds,1,Low,Average,Average,Average,Low,FALSE,FALSE,FALSE,FALSE,FALSE,123.9
+iShares U.S. Preferred Stock ETF,CX_US4642886877_NYQ,464288687,Diversified,Domestic,Equity,5,High,Low,High,High,Average,TRUE,TRUE,TRUE,TRUE,TRUE,39.13
+iShares Core MSCI Emerging Markets,CX_US46434G1031_NYQ,46434G103,Diversified,Domestic,Equity,7,Low,High,High,High,Low,FALSE,FALSE,FALSE,FALSE,FALSE,52.23
+KELLOGG,CX_US4878361082_NYQ,487836108,Consumer Staples,Domestic,Equity,6,Average,Average,Low,Average,Average,FALSE,FALSE,FALSE,FALSE,FALSE,66.26
+LOWES COMPANIES INC,CX_US5486611073_NYQ,548661107,Consumer Discretionary,Domestic,Equity,5,Low,Average,Low,High,Low,FALSE,FALSE,FALSE,FALSE,FALSE,75.96
+MARATHON PETROLEUM CORP,CX_US56585AAG76_USD,56585AAG7,Energy,Domestic,Corporate Bonds,6,Average,Low,Low,Average,Low,FALSE,FALSE,FALSE,FALSE,TRUE,101.2715
+NEWMONT MINING CORP,CX_US651639AN69_USD,651639AN6,Industrials,Domestic,Corporate Bonds,6,High,Low,Average,Average,Low,FALSE,FALSE,FALSE,FALSE,TRUE,103.8731
+PAYPAL HOLDINGS INC,CX_US70450Y1038_NSQ,70450Y103,Information Technology,Domestic,Equity,5,High,Low,Average,High,Low,FALSE,FALSE,FALSE,FALSE,FALSE,58.96
+UNITED CONTINENTAL HOLDINGS INC,CX_US9100471096_NYQ,910047109,Industrials,Domestic,Equity,6,Average,Low,High,Low,Low,FALSE,FALSE,FALSE,FALSE,FALSE,78.9
+US Treasury 05/15/2021,CX_US912810EJ35_USD,912810EJ3,Government,Domestic,Government Bonds,1,Low,High,High,High,Average,FALSE,FALSE,FALSE,FALSE,FALSE,123.84375
+TREASURY BOND,CX_US912810PX00_USD,912810PX0,Government,Domestic,Government Bonds,1,Low,High,High,High,Low,FALSE,FALSE,FALSE,FALSE,FALSE,129.45313
