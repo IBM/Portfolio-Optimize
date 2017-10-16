@@ -52,6 +52,8 @@ if 'RUN_LOCAL' in os.environ:
 #======================================MAIN PAGES======================================
 @app.route('/')
 def run():
+
+    init()
     return render_template('index.html')
 
 @app.route('/api/init') #refers to web address. when found...
