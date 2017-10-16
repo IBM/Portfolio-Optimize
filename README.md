@@ -13,7 +13,7 @@ When the reader has completed this journey, they will understand how to:
 * Construct a user interface to gather requirements and constraints from the user and return the details of the optimized portfolio.
 
 <p align="center">
-  <img width="400" height="400" src="static/images/architecture.png">
+  <img width="400" height="400" src="static/images/PorfolioOptimizationArch.png">
 </p>
 
 ## Included Components
