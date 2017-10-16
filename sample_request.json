@@ -1,0 +1,22 @@
+{
+    "user_portfolio": {
+        "Type":"existing",
+        "Name":"my_portfolio"
+    },
+    "benchmark":"Aggressive",
+    "hard_constraints":["has_tobacco","has_military"],
+    "esg_constraints":[
+        {"type":"esg_sustainability","value":"Average"},
+        {"type":"esg_environmental","value":"High"}
+    ],
+    "allocation_constraints":[
+        {"type":"asset-class","value":"Equity","allocation":0.5,"inequality":"equal"}, 
+        {"type":"asset-class","value":"Corporate Bonds","allocation":0.3,"inequality":"less than or equal"},
+        {"type":"asset-class","value":"Government Bonds","allocation":0.2,"inequality":"equal"}
+    ],
+    "result_requirements":[
+        {"type":"AllowShortSales","value":"False"},
+        {"type":"MaximumInvestmentWeight","value":0.2},
+        {"type":"CashInfusion","value":50000}
+    ]
+}

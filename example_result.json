@@ -1,0 +1,258 @@
+{
+    "Holdings": [
+        {
+            "Asset": "CX_IE00BY7QL619_NYQ", 
+            "OptimizedQuantity": 44.5200604534682, 
+            "OptimizedTrade": 44.5200604534682, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US02079KAA51_USD", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US031162BG42_USD", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US031162BK53_USD", 
+            "OptimizedQuantity": 10.0549954647908, 
+            "OptimizedTrade": 10.0549954647908, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US03232PAD06_USD", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US0533321024_NYQ", 
+            "OptimizedQuantity": 6.54881117700552, 
+            "OptimizedTrade": 5.54881117700552, 
+            "Quantity": 1
+        }, 
+        {
+            "Asset": "CX_US0584981064_NYQ", 
+            "OptimizedQuantity": 31.4109043842801, 
+            "OptimizedTrade": 19.4109043842801, 
+            "Quantity": 12
+        }, 
+        {
+            "Asset": "CX_US1696561059_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": -5, 
+            "Quantity": 5
+        }, 
+        {
+            "Asset": "CX_US1912161007_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": -5, 
+            "Quantity": 5
+        }, 
+        {
+            "Asset": "CX_US29379VAY92_USD", 
+            "OptimizedQuantity": 46.0025196052549, 
+            "OptimizedTrade": 41.0025196052549, 
+            "Quantity": 5
+        }, 
+        {
+            "Asset": "CX_US30231GAN25_USD", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": -5, 
+            "Quantity": 5
+        }, 
+        {
+            "Asset": "CX_US46120E6023_NSQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": -1, 
+            "Quantity": 1
+        }, 
+        {
+            "Asset": "CX_US4642851053_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US4642871762_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US4642872000_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US4642872422_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US4642874329_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US4642874402_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US4642874576_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US4642874659_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US4642875078_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US4642875987_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US4642876142_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US4642878049_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US4642882819_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US4642884146_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US4642885135_NYQ", 
+            "OptimizedQuantity": 129.695553047404, 
+            "OptimizedTrade": 129.695553047404, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US4642885887_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US4642886463_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US4642886612_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US4642886877_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US46434G1031_NYQ", 
+            "OptimizedQuantity": 47.8524370605042, 
+            "OptimizedTrade": 47.8524370605042, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US4878361082_NYQ", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": -5, 
+            "Quantity": 5
+        }, 
+        {
+            "Asset": "CX_US5486611073_NYQ", 
+            "OptimizedQuantity": 109.91267213312, 
+            "OptimizedTrade": 104.91267213312, 
+            "Quantity": 5
+        }, 
+        {
+            "Asset": "CX_US56585AAG76_USD", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": -5, 
+            "Quantity": 5
+        }, 
+        {
+            "Asset": "CX_US651639AN69_USD", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": -5, 
+            "Quantity": 5
+        }, 
+        {
+            "Asset": "CX_US70450Y1038_NSQ", 
+            "OptimizedQuantity": 90.0599787665568, 
+            "OptimizedTrade": 85.0599787665568, 
+            "Quantity": 5
+        }, 
+        {
+            "Asset": "CX_US9100471096_NYQ", 
+            "OptimizedQuantity": 76.448870123679, 
+            "OptimizedTrade": 71.448870123679, 
+            "Quantity": 5
+        }, 
+        {
+            "Asset": "CX_US912810EJ35_USD", 
+            "OptimizedQuantity": 92.7892926356589, 
+            "OptimizedTrade": 92.7892926356589, 
+            "Quantity": 0
+        }, 
+        {
+            "Asset": "CX_US912810PX00_USD", 
+            "OptimizedQuantity": 0, 
+            "OptimizedTrade": 0, 
+            "Quantity": 0
+        }
+    ], 
+    "Metadata": {
+        "Message": "Optimal", 
+        "ObjectiveValue": 0.00028407784914459, 
+        "RequestEndTimestamp": "2017-09-26T15-19-50.556093045-UTC", 
+        "RequestStartTimestamp": "2017-09-26T15-19-50.364301206-UTC", 
+        "Status": "Optimal", 
+        "StatusCode": 1, 
+        "TransactionID": "e00ad88d-50f7-471d-851b-b8459df62bcb"
+    }, 
+    "Performance": {
+        "Algorithm": "Dual", 
+        "Threads": 2, 
+        "Time": 0
+    }
+}
