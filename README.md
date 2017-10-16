@@ -16,15 +16,17 @@ When the reader has completed this journey, they will understand how to:
   <img width="400" height="400" src="static/images/PortfolioOptimizationArch.png">
 </p>
 
+
+
 ## Included Components
 + Bluemix Investment Portfolio
 + Bluemix Portfolio Optimization
 
 # Deploy to Bluemix
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/devops/setup/deploy?repository=https://github.com/IBM/Build-an-optimal-investment-portfolio)
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/devops/setup/deploy?repository=https://github.com/ljbennett62/Portfolio-Optimize)
 
-Be sure to [load investment portfolio](#3-load-investment-portfolio) before running the application.
+**Note:** You need to prepopulate the Investment Portfolio service before running the front end. The process we outline below takes you through populating your portfolio using an endpoint (instead of a raw curl command). Therefore - Make sure you initalize the application by accessing the initialize endpoint in your browser by navigating to <http://0.0.0.0:8080/api/init>.  You need to execute the `python run.py` to make the init endpoint work. If you load the UI before running /api/init you'll get errors. See Step 6: [Initialize Investment Portfolio](#6-initalize-the-investment-portfolio-service) for more details.
 
 # Running the Application
 Follow these steps to setup and run this developer journey. The steps are described in detail below.
