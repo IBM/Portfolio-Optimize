@@ -22,19 +22,23 @@ When the reader has completed this journey, they will understand how to:
 + Bluemix Investment Portfolio
 + Bluemix Portfolio Optimization
 
-# Deploy to Bluemix
+## Steps
+
+Use the ``Deploy to Bluemix`` button **OR** create the services and run ``Run Locally``.
+
+## Deploy to Bluemix
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/devops/setup/deploy?repository=https://github.com/IBM/Portfolio-Optimize)
 
-**Note:** You need to prepopulate the Investment Portfolio service before running the front end. The process we outline below takes you through populating your portfolio using an endpoint (instead of a raw curl command). Therefore - Make sure you initalize the application by accessing the initialize endpoint in your browser by navigating to <http://0.0.0.0:8080/api/init>.  You need to execute the `python run.py` to make the init endpoint work. If you load the UI before running /api/init you'll get errors. See Step 6: [Initialize Investment Portfolio](#6-initalize-the-investment-portfolio-service) for more details.
+**Note:** The code automatically prepopulates the Investment Portfolio service before running the front end.  This is done without use the typical raw curl command. See Step 6: [Initialize Investment Portfolio](#6-initalize-the-investment-portfolio-service) for more details.
 
-# Running the Application Locally
+## Running the Application Locally
 Follow these steps to setup and run this developer journey. The steps are described in detail below.
 
 ## Prerequisites
 - [Python](https://www.python.org/downloads/)
 
-## Steps
+## Steps to run locally
 1. [Clone the repo](#1-clone-the-repo)
 2. [Create Bluemix services](#2-create-bluemix-services)
 3. [Configure Manifest file](#3-configure-manifest)
@@ -125,7 +129,7 @@ Some points to note:
 - Benchmark options and weights are defined in the `benchmarks.csv` file. You can specify weights instead of position units (e.g. .25 for 25% allocation)
 - An example user portfolio is defined in the `portfolio.csv` file. Here, position units are expected as the total value of the optimized portfolio will match the current value of this (unless a cash infusion is specified in the request).
 
-To initalize the application, access the initialize endpoint in your browser by navigating to <http://0.0.0.0:8080/api/init>.
+You have the ability to initalize the application by accessing the initialize endpoint in your browser by navigating to <http://0.0.0.0:8080/api/init>.
 
 Find more information on Investment Portfolio api calls [here](https://console.ng.bluemix.net/apidocs/751-investment-portfolio?&language=node#introduction).
 
