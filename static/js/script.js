@@ -137,7 +137,13 @@ function validateESG(flag,query) {
 function validateConcentrations() {
   var query={};
   if(validatePortfolio(true,query)  && validateBenchMark(true,query) && validateESG(true,query)){
-    //console.log(query);
+    //Check to see that user put in an amount if starting from scratch.
+    if($('input[name=user_portfolio]:checked').val() == "new"){
+        if($("#cash_infusion_checkbox").is(':checked') == false || $('#cash_infusion').val() == "" ){
+            alert("Please enter the amount you're looking to invest, since you're starting from scratch. This is entered as a cash infusion under result requirements. Make sure the constraint is activated by checking the box!")
+            return false;
+        }
+    }
     var allocationConstraints =[];
     var identifiers = $('input[name=allocation_checkbox]');
     for(var i=0;i<identifiers.length;i++){
