@@ -8,7 +8,7 @@
     "tags": [
         "finance"
     ],
-    "demoURL": "https://predictive-market-stress-testing.mybluemix.net/",
+    "demoURL": "https://potfolio-optimize.mybluemix.net",
     "generators": {
         "python": [
             "generator-starterkit-content-downloader",
