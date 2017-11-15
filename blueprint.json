@@ -40,7 +40,7 @@
         "investmentPortfolio"
     ],
     "requiredCapabilitiesURLs": {
-        "simulatedInstrumentAnalytics": "https://console.bluemix.net/catalog/services/portfolio-optimization",
+        "portfolioOptimization": "https://console.bluemix.net/catalog/services/portfolio-optimization",
         "investmentPortfolio": "https://console.bluemix.net/docs/services/InvestmentPortfolio"
     },
     "servicePlans": {
