@@ -1,0 +1,51 @@
+{
+    "name": "Socially Responsible Portfolio Construction",
+    "description": "Create an optimized set of investments that suit your unique needs",
+    "thumbnailURL": "blueprint/thumbnail.svg",
+    "appIconURL": "blueprint/appicon.svg",
+    "previewURLs": [],
+    "type": "WEB",
+    "tags": [
+        "finance"
+    ],
+    "demoURL": "https://predictive-market-stress-testing.mybluemix.net/",
+    "generators": {
+        "python": [
+            "generator-starterkit-content-downloader",
+            "generator-ibm-cloud-enablement",
+            "generator-ibm-service-enablement",
+            "generator-git-starterkit-credentials-builder"
+        ]
+    },
+    "generatorOptions": {
+        "generator-git-starterkit-credentials-builder": {
+            "registry": "https://npm-registry.whitewater.ibm.com",
+            "scope": "@arf",
+            "version": "0.0.x"
+        },
+        "generator-starterkit-content-downloader": {
+            "registry": "https://npm-registry.whitewater.ibm.com",
+            "scope": "@arf",
+            "version": "0.0.x"
+        },
+        "generator-ibm-cloud-enablement": {
+            "version": "0.0.x"
+        },
+        "generator-ibm-service-enablement": {
+            "version": "0.0.x"
+        }
+    },
+    "requiredCapabilities": [
+        "portfolioOptimization",
+        "investmentPortfolio"
+    ],
+    "requiredCapabilitiesURLs": {
+        "simulatedInstrumentAnalytics": "https://console.bluemix.net/catalog/services/portfolio-optimization",
+        "investmentPortfolio": "https://console.bluemix.net/docs/services/InvestmentPortfolio"
+    },
+    "servicePlans": {
+        "portfolioOptimization": "fss-financial-optimization-service-free-plan",
+        "investmentPortfolio": "fss-portfolio-service-free-plan"
+    },
+    "email": "cloud@us.ibm.com"
+}
