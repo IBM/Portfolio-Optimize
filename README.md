@@ -155,6 +155,56 @@ python InvestmentPortfolio.py
 python PortfolioOptimization.py
 ```
 
+## Privacy Notice
+
+This web application includes code to track deployments to [IBM Bluemix](https://www.bluemix.net/) runtimes and services. The following information is sent to a [Metrics Tracker](https://github.com/IBM/metrics-collector-service) service on each deployment:
+
+* Application Name (`application_name`)
+* Application GUID (`application_id`)
+* Application instance index (`instance_index`)
+* Space ID (`space_id`)
+* Application Version (`application_version`)
+* Application URIs (`application_uris`)
+* Labels of bound services
+* Number of instances for each bound service
+
+This data is collected from the `VCAP_APPLICATION` and `VCAP_SERVICES` environment variables in IBM Bluemix. This data is used by IBM to track metrics around deployments of sample applications to IBM Bluemix to measure the usefulness of our examples, so that we can continuously improve the content we offer to you. Only deployments of sample applications that include code to ping the Deployment Tracker service will be tracked.
+
+### Disabling Deployment Tracking
+
+Disabling the deployment tracker varies based on sample application implementation. Please include specific disabling instructions within your README's Privacy Notice.
+
+# Privacy Notice
+
+If using the Deploy to Bluemix button some metrics are tracked, the following
+information is sent to [Deployment Tracker](https://github.com/IBM-Bluemix/cf-deployment-tracker-service) and 
+[Metrics collector](https://github.com/IBM/metrics-collector-service) service on each deployment:
+
+* Python package version
+* Python repository URL
+* Application Name (application_name)
+* Application GUID (application_id)
+* Application instance index number (instance_index)
+* Space ID (space_id)
+* Application Version (application_version)
+* Application URIs (application_uris)
+* Cloud Foundry API (cf_api)
+* Labels of bound services
+* Number of instances for each bound service and associated plan information
+
+This data is collected from the setup.py and repository.yaml file in the sample application and the ``VCAP_APPLICATION``
+and ``VCAP_SERVICES`` environment variables in IBM Bluemix and other Cloud Foundry platforms. This
+data is used by IBM to track metrics around deployments of sample applications to IBM Bluemix to
+measure the usefulness of our examples, so that we can continuously improve the content we offer
+to you. Only deployments of sample applications that include code to ping the Deployment Tracker
+service will be tracked.
+
+## Disabling Deployment Tracking
+
+To disable tracking, simply remove ``cf_deployment_tracker.track()`` and ``metrics_tracker_client.track()`` from the
+``run.py`` file in the top level directory.
+
+
 # License
 
 [Apache 2.0](LICENSE)
