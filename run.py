@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import cf_deployment_tracker
 import metrics_tracker_client
 from flask import Flask, render_template, jsonify, json, url_for, request, redirect, Response, flash, abort
 from dotenv import load_dotenv
@@ -469,6 +470,7 @@ def optimize():
         return Response(json.dumps(optimized_portfolio), mimetype='application/json')
 
 if __name__ == '__main__':
+    cf_deployment_tracker.track()
     metrics_tracker_client.track()
     app.run(host=host, port=port)
 
