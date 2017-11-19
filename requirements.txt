@@ -1,3 +1,5 @@
 Flask==0.10.1
 requests
 python-dotenv
+metrics-tracker-client>=1.0.9
+cf-deployment-tracker==1.0.4
