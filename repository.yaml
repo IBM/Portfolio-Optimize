@@ -4,6 +4,6 @@ event_organizer: dev-journeys
 runtimes: 
   - Cloud Foundry
 services: 
-  - fss portfolio service
-  - fss financial optimization service
+  - Investment Portfolio
+  - Portfolio Optimization
 language: python
