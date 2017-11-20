@@ -5,5 +5,5 @@ runtimes:
   - Cloud Foundry
 services: 
   - Investment Portfolio
-  - Portfolio Optimization
+  - Investment Optimization
 language: python
