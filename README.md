@@ -25,11 +25,11 @@ When the reader has completed this journey, they will understand how to:
 
 ## Steps
 
-Use the ``Deploy to Bluemix`` button **OR** create the services and run ``Run Locally``.
+Use the ``Deploy to IBM Cloud`` button **OR** create the services and run ``Run Locally``.
 
-## Deploy to Bluemix
+## Deploy to IBM Cloud
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/devops/setup/deploy?repository=https://github.com/IBM/Portfolio-Optimize)
+[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/devops/setup/deploy?repository=https://github.com/IBM/Portfolio-Optimize)
 
 **Note:** The code automatically prepopulates the Investment Portfolio service before running the front end.  This is done without use the typical raw curl command. See Step 6: [Initialize Investment Portfolio](#6-initalize-the-investment-portfolio-service) for more details.
 
@@ -157,7 +157,7 @@ python PortfolioOptimization.py
 
 ## Privacy Notice
 
-This web application includes code to track deployments to [IBM Bluemix](https://www.bluemix.net/) runtimes and services. The following information is sent to a [Metrics Tracker](https://github.com/IBM/metrics-collector-service) service on each deployment:
+This web application includes code to track deployments to [IBM Cloud](https://www.bluemix.net/) runtimes and services. The following information is sent to a [Metrics Tracker](https://github.com/IBM/metrics-collector-service) service on each deployment:
 
 * Application Name (`application_name`)
 * Application GUID (`application_id`)
@@ -168,7 +168,7 @@ This web application includes code to track deployments to [IBM Bluemix](https:/
 * Labels of bound services
 * Number of instances for each bound service
 
-This data is collected from the `VCAP_APPLICATION` and `VCAP_SERVICES` environment variables in IBM Bluemix. This data is used by IBM to track metrics around deployments of sample applications to IBM Bluemix to measure the usefulness of our examples, so that we can continuously improve the content we offer to you. Only deployments of sample applications that include code to ping the Deployment Tracker service will be tracked.
+This data is collected from the `VCAP_APPLICATION` and `VCAP_SERVICES` environment variables in IBM Cloud. This data is used by IBM to track metrics around deployments of sample applications to IBM Cloud to measure the usefulness of our examples, so that we can continuously improve the content we offer to you. Only deployments of sample applications that include code to ping the Deployment Tracker service will be tracked.
 
 ### Disabling Deployment Tracking
 
@@ -176,7 +176,7 @@ Disabling the deployment tracker varies based on sample application implementati
 
 # Privacy Notice
 
-If using the Deploy to Bluemix button some metrics are tracked, the following
+If using the Deploy to IBM Cloud button some metrics are tracked, the following
 information is sent to [Deployment Tracker](https://github.com/IBM-Bluemix/cf-deployment-tracker-service) and 
 [Metrics collector](https://github.com/IBM/metrics-collector-service) service on each deployment:
 
@@ -193,8 +193,8 @@ information is sent to [Deployment Tracker](https://github.com/IBM-Bluemix/cf-de
 * Number of instances for each bound service and associated plan information
 
 This data is collected from the setup.py and repository.yaml file in the sample application and the ``VCAP_APPLICATION``
-and ``VCAP_SERVICES`` environment variables in IBM Bluemix and other Cloud Foundry platforms. This
-data is used by IBM to track metrics around deployments of sample applications to IBM Bluemix to
+and ``VCAP_SERVICES`` environment variables in IBM Cloud and other Cloud Foundry platforms. This
+data is used by IBM to track metrics around deployments of sample applications to IBM Cloud to
 measure the usefulness of our examples, so that we can continuously improve the content we offer
 to you. Only deployments of sample applications that include code to ping the Deployment Tracker
 service will be tracked.
