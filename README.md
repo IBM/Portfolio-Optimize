@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/IBM/Portfolio-Optmize.svg?branch=master)](https://travis-ci.org/IBM/Portfolio-Optimize)
 # Socially Responsible Investment Portfolio Construction
 
-In this developer journey, we will demonstrate how to collect information from a user to build a socially responsible portfolio that maintains the same risk and return profile of a standardized portfolio. 
+In this developer journey, we will demonstrate how to collect information from a user to build a socially responsible portfolio that maintains the same risk and return profile of a standardized portfolio.
 
 This journey leverages two services:
 - The **Investment Portfolio service** is used to manage and store portfolios and financial security information such as the set of eligible investments, benchmarks, and user portfolios.
@@ -29,7 +29,8 @@ Use the ``Deploy to IBM Cloud`` button **OR** create the services and run ``Run 
 
 ## Deploy to IBM Cloud
 
-[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/devops/setup/deploy?repository=https://github.com/IBM/Portfolio-Optimize)
+[![](https://raw.githubusercontent.com/IBM/manage-control-device-node-red/master/images/deploy-btn.PNG)](https://console.ng.bluemix.net/devops/setup/deploy/?repository=https://github.com/IBM/Portfolio-Optimize)
+
 
 **Note:** The code automatically prepopulates the Investment Portfolio service before running the front end.  This is done without use the typical raw curl command. See Step 6: [Initialize Investment Portfolio](#6-initalize-the-investment-portfolio-service) for more details.
 
@@ -120,13 +121,13 @@ cd into this project's root directory
 
 ## 6. Initalize the Investment Portfolio Service
 
-The application relies on a few elements pre-populated in the Investment Portfolio service. The user interface will read from this service in order to retrieve the properties and selections that a user can interact with. 
+The application relies on a few elements pre-populated in the Investment Portfolio service. The user interface will read from this service in order to retrieve the properties and selections that a user can interact with.
 
-Once the application is running, we can initialize the service by populating the Investment Portfolio service with the information it needs. 
+Once the application is running, we can initialize the service by populating the Investment Portfolio service with the information it needs.
 
 Some points to note:
 - make sure the `.env` file has been updated with your user credentials for the Investment Portfolio service.
-- You can observe the financial security choices and meta-data in the `Instrument Universe.csv` file. 
+- You can observe the financial security choices and meta-data in the `Instrument Universe.csv` file.
 - Benchmark options and weights are defined in the `benchmarks.csv` file. You can specify weights instead of position units (e.g. .25 for 25% allocation)
 - An example user portfolio is defined in the `portfolio.csv` file. Here, position units are expected as the total value of the optimized portfolio will match the current value of this (unless a cash infusion is specified in the request).
 
@@ -177,7 +178,7 @@ Disabling the deployment tracker varies based on sample application implementati
 # Privacy Notice
 
 If using the Deploy to IBM Cloud button some metrics are tracked, the following
-information is sent to [Deployment Tracker](https://github.com/IBM-Bluemix/cf-deployment-tracker-service) and 
+information is sent to [Deployment Tracker](https://github.com/IBM-Bluemix/cf-deployment-tracker-service) and
 [Metrics collector](https://github.com/IBM/metrics-collector-service) service on each deployment:
 
 * Python package version
@@ -204,6 +205,17 @@ service will be tracked.
 To disable tracking, simply remove ``cf_deployment_tracker.track()`` and ``metrics_tracker_client.track()`` from the
 ``run.py`` file in the top level directory.
 
+## <h2>Learn more</h2>
+<ul>
+<li><strong>Artificial Intelligence Code Patterns</strong>: Enjoyed this Code Pattern? Check out our other <a href="https://developer.ibm.com/code/technologies/artificial-intelligence/" rel="nofollow">AI Code Patterns</a>.</li>
+<li><strong>Data Analytics Code Patterns</strong>: Enjoyed this Code Pattern? Check out our other <a href="https://developer.ibm.com/code/technologies/data-science/" rel="nofollow">Data Analytics Code Patterns</a></li>
+<li><strong>AI and Data Code Pattern Playlist</strong>: Bookmark our <a href="https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde" rel="nofollow">playlist</a> with all of our Code Pattern videos</li>
+<li><strong>With Watson</strong>: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? <a href="https://www.ibm.com/watson/with-watson/" rel="nofollow">Join the With Watson program</a> to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.</li>
+<li><strong>Data Science Experience</strong>: Master the art of data science with IBM's <a href="https://datascience.ibm.com/" rel="nofollow">Data Science Experience</a></li>
+<li><strong>PowerAI</strong>: Get started or get scaling, faster, with a software distribution for machine learning running on the Enterprise Platform for AI: <a href="https://www.ibm.com/ms-en/marketplace/deep-learning-platform" rel="nofollow">IBM Power Systems</a></li>
+<li><strong>Spark on IBM Cloud</strong>: Need a Spark cluster? Create up to 30 Spark executors on IBM Cloud with our <a href="https://console.bluemix.net/catalog/services/apache-spark" rel="nofollow">Spark service</a></li>
+<li><strong>Kubernetes on IBM Cloud</strong>: Deliver your apps with the combined the power of <a href="https://www.ibm.com/cloud-computing/bluemix/containers" rel="nofollow">Kubernetes and Docker on IBM Cloud</a></li>
+</ul>
 
 # License
 
