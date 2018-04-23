@@ -1,3 +1,6 @@
+**__Skill Level__**: Beginner
+<br>**__N.B__**: All services used in this repo are Lite plans.
+
 [![Build Status](https://travis-ci.org/IBM/Portfolio-Optmize.svg?branch=master)](https://travis-ci.org/IBM/Portfolio-Optimize)
 # Socially Responsible Investment Portfolio Construction
 
@@ -29,7 +32,7 @@ Use the ``Deploy to IBM Cloud`` button **OR** create the services and run ``Run 
 
 ## Deploy to IBM Cloud
 
-[![Deploy to IBM Cloud](images/deploy_btm_cloud.png)](https://console.ng.bluemix.net/devops/setup/deploy/?repository=https://github.com/IBM/Portfolio-Optimize)
+[![](img/deploy_btm_cloud.png)](https://console.ng.bluemix.net/devops/setup/deploy/?repository=https://github.com/IBM/Portfolio-Optimize)
 
 
 **Note:** The code automatically prepopulates the Investment Portfolio service before running the front end.  This is done without use the typical raw curl command. See Step 6: [Initialize Investment Portfolio](#6-initalize-the-investment-portfolio-service) for more details.
