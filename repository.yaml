@@ -1,9 +1,0 @@
-id: Portfolio-Optimize
-event_id: web
-event_organizer: dev-journeys
-runtimes: 
-  - Cloud Foundry
-services: 
-  - Investment Portfolio
-  - Investment Optimization
-language: python
