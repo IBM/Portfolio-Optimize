@@ -53,7 +53,7 @@ Follow these steps to setup and run this developer journey. The steps are descri
 
 ## 1. Clone the repo
 
-Clone the `Build-an-optimal-investment-portfolio code` locally. In a terminal, run:
+Clone the `Portfolio-Optimize` code locally. In a terminal, run:
 
   `$ git clone https://github.com/IBM/Portfolio-Optimize.git`
 
