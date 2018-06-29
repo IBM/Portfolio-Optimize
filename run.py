@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
 from flask import Flask, render_template, jsonify, json, url_for, request, redirect, Response, flash, abort
 from dotenv import load_dotenv
 import requests
@@ -469,3 +470,4 @@ def optimize():
 
 if __name__ == '__main__':
     app.run(host=host, port=port)
+

@@ -10,7 +10,7 @@
     memory: 128M
     instances: 1
     name: rz-construct-optimize-portfolio
-    disk_quota: 1024M
+    disk_quota: 512M
     domain: mybluemix.net
     services:
     - Investment-Portfolio
