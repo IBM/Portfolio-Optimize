@@ -55,12 +55,12 @@ Follow these steps to setup and run this developer journey. The steps are descri
 
 Clone the `Build-an-optimal-investment-portfolio code` locally. In a terminal, run:
 
-  `$ git clone https://github.com/IBM/Build-an-optimal-investment-portfolio.git`
+  `$ git clone https://github.com/IBM/Portfolio-Optimize.git`
 
 ## 2. Create IBM Cloud services
 
 __Create the following services:__
-You need to click on each link listed below, give it a name and create the service. 
+You need to click on each link listed below, give it a name and create the service.
 
 * [**Investment Portfolio**](https://console.ng.bluemix.net/catalog/services/investment-portfolio)
 * [**Portfolio Optimization**](https://console.bluemix.net/catalog/services/portfolio-optimization)
