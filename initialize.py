@@ -15,7 +15,7 @@ def universe_from_csv():
         'data':{'type':'root'},
         'name':'instrument_universe'
     }
-    with open('Instrument Universe.csv','rb') as i_file:
+    with open('Instrument Universe.csv','r') as i_file:
         reader = csv.reader(i_file,delimiter=',')
         headers = []
         universe = [row for row in reader]
@@ -37,7 +37,7 @@ def portfolio_from_csv():
         'timestamp':'{:%Y-%m-%dT%H:%M:%S.%fZ}'.format(datetime.datetime.now()),
         'holdings':[]
     }
-    with open('portfolio.csv','rb') as p_file:
+    with open('portfolio.csv','r') as p_file:
         reader = csv.reader(p_file,delimiter=',')
         portfolio = [row for row in reader]
     p_file.close()
@@ -65,7 +65,7 @@ def benchmarks_from_csv():
     Returns a set of benchmark portfolios and associated holdings.
     """
     benchmark_portfolios = []
-    with open('benchmarks.csv','rb') as b_file:
+    with open('benchmarks.csv','r') as b_file:
         reader = csv.reader(b_file,delimiter=',')
         benchmarks = [row for row in reader]
     b_file.close()
