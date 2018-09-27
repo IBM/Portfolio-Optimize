@@ -1,0 +1,51 @@
+{
+    "name": "Socially Responsible Portfolio Construction",
+    "description": "Use IBM Cloud financial services to create an optimized set of investments that suit your unique needs.",
+    "thumbnailURL": "blueprint/thumbnail.svg",
+    "appIconURL": "blueprint/appicon.svg",
+    "type": "WEB",
+    "tags": [
+        "devex"
+    ],
+    "demoURL": "https://portfolio-optimize.mybluemix.net",
+    "generators": {
+        "python": [
+            "generator-starterkit-content-downloader",
+            "generator-ibm-cloud-enablement",
+            "generator-ibm-service-enablement",
+            "generator-git-starterkit-credentials-builder"
+        ]
+    },
+    "generatorOptions": {
+        "generator-git-starterkit-credentials-builder": {
+            "version": "0.x.x",
+            "scope": "@arf"
+        },
+        "generator-ibm-cloud-enablement": {
+            "version": "1.0.x",
+            "options": {
+                "port": "3000"
+            }
+        },
+        "generator-ibm-service-enablement": {
+            "version": "2.3.x"
+        },
+        "generator-starterkit-content-downloader": {
+            "version": "0.x.x",
+            "scope": "@arf"
+        }
+    },
+    "requiredCapabilities": [
+        "portfolioOptimization",
+        "investmentPortfolio"
+    ],
+    "requiredCapabilitiesURLs": {
+        "portfolioOptimization": "https://console.bluemix.net/catalog/services/portfolio-optimization",
+        "investmentPortfolio": "https://console.bluemix.net/docs/services/InvestmentPortfolio"
+    },
+    "servicePlans": {
+        "portfolioOptimization": "fss-financial-optimization-service-free-plan",
+        "investmentPortfolio": "fss-portfolio-service-free-plan"
+    },
+    "email": "cloud@us.ibm.com"
+}
