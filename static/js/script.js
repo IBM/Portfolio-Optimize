@@ -203,36 +203,92 @@ function optimize(query){
                 //async: false,
                 contentType: 'application/json; charset=utf-8',
                 success: function(results) {
+                    topFunction()
                     console.log("Optimization Results :");
                     console.log(results);
-                    $('#results > tr').remove();
-                    $('#results').append('<caption> An optimal portfolio was constructed with a volatility that differs from the benchmark by only '+ formatNumber(results.Metadata.ObjectiveValue,10)+'. The following are the trades required to arrive at this optimized portfolio and the resulting allocation.<caption>');
+                    //$('#results > tr').remove();
+                    $('#difference').append('<br><br><p style="width: 75%"> An optimal portfolio was constructed with a volatility that differs from the benchmark by only '+ formatNumber(results.Metadata.ObjectiveValue,10)+'. The following are the trades required to arrive at this optimized portfolio and the resulting allocation:</p>');
+                    var holdings_title = 'Results of the Optimization:';
+                    $('.title1 h3').text(holdings_title);
                     if(results.Holdings.length>0){
                       var rowData="<tr>";
                       var tableCols=[];
                       $.each(results.Holdings[0], function(key, value) {
                             //console.log(key, value);
                             if(capitalize(key).trim()!="Asset"){
-                              rowData+="<td><b>"+capitalize(key)+"</b></td>";
-                              tableCols.push(key);
+                                tableCols.push(key);
+                                switch(capitalize(key)) {
+                                    case "OptimizedQuantity":
+                                        var f = "New Quantity";
+                                        break;
+                                    case "OptimizedTrade":
+                                        var f = "Suggested Trade";
+                                        break;
+                                    default:
+                                        var f = capitalize(key)
+                                }
+                                rowData+="<td><b>"+f+"</b></td>";
                             }
                       });
-                      $("#results > thead").append(rowData+"</tr>");
+                      $(".port-table  thead").html(rowData+"</tr>");
+                      var rowData="";
                       for (var i = 0; i < results.Holdings.length; i++) {
-                        rowData="<tr>";
+                        rowData+="<tr>";
                         for(var j=0;j<tableCols.length;j++){
 
                           var value = results.Holdings[i][tableCols[j]];
+                         
                           if(typeof value == 'number'){
                           	if (value % 1 != 0) {
                               value = value.toFixed(2);
                             }
+                            value = commaFormat(value);
                           }
-                          //value = isNaN(value)?value:formatNumber(value,5);
-                          rowData+="<td>"+value+"</td>";
+
+                          //'OptimizedTrade' assign green/reg
+                         if(tableCols[j] == "OptimizedQuantity"){
+                            if(results.Holdings[i]["OptimizedTrade"] < 0){
+                                rowData+='<td class="red">'+value+"</td>";
+                            }else if(results.Holdings[i]["OptimizedTrade"] > 0){
+                                rowData+='<td class="green">'+value+"</td>";
+                            }else{
+                                rowData+="<td>"+value+"</td>";
+                            }
+                        }else if(tableCols[j] == "OptimizedTrade"){ //Trades to make
+                            if(value<0){
+                                if(results.Holdings[i]["OptimizedTrade"] == -1*results.Holdings[i]["Quantity"]){
+                                    value = "Close this position."
+                                    rowData+="<td>"+value+"</td>"; 
+                                }else{
+                                    value = "Sell "+value.substring(1)+" shares."
+                                    rowData+="<td>"+value+"</td>"; 
+                                }
+                            }else if(value>0){
+                                value = "Buy "+value+" shares."
+                                rowData+="<td>"+value+"</td>"; 
+                            }else{
+                                rowData+="<td>"+value+"</td>"; 
+                            }
+                        }else{
+                            rowData+="<td>"+value+"</td>";
                         }
-                        $("#results > tbody").append(rowData+"</tr>");
+                         //owData+="<td>"+value+"</td>";
+                        }
+                        rowData+="</tr>";
                       }
+                      $(".port-table  tbody").html(rowData);
+                      $('#results').DataTable( {
+                          columnDefs: [ {
+                              targets: [ 0 ],
+                              orderData: [ 0, 1 ]
+                          }, {
+                              targets: [ 1 ],
+                              orderData: [ 1, 0 ]
+                          }, {
+                              targets: [ 4 ],
+                              orderData: [ 4, 0 ]
+                          } ]
+                      } );
                     }
                     $("#loader_section").hide();
                     $("#section_one").hide();
@@ -241,6 +297,7 @@ function optimize(query){
                     $("#section_four").hide();
                     $("#section_five").show();
                     //loadDisplay(4);
+
                 },
                 error: function(jqXHR, textStatus, errorThrown) {
                     $("#loader_section").hide();
@@ -251,8 +308,10 @@ function optimize(query){
                     location.reload();
                 }
             }
+            
         );
     return false;
+    
 }
 
 function loadHardConstraints(values) {
@@ -345,4 +404,16 @@ function loadAllocationValues(selected,selectId){
 
 function formatNumber(val,decimalPlaces){
   return  Number(val).toFixed(decimalPlaces);
+}
+
+const commaFormat = (x) => {
+    var v = x.toString().split(".");
+    v[0] = v[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return v.join(".");
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }

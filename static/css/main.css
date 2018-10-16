@@ -3632,67 +3632,68 @@ body {
         text-align: right;
         font-size: 14px;
         text-decoration: underline; }
-    .container.sandbox1 .right-panel .right-panel__statistics .port-table {
-      width: calc(100% + 15px);
-      margin-top: 16px;
-      height: calc(50vh - 60px - 56px - 76px);
-      overflow: auto;
-      margin: 32px 0 64px 0;
-      margin-top: 40px;
-      overflow: scroll;
-      position: static; }
-      .container.sandbox1 .right-panel .right-panel__statistics .port-table__wrapper {
-        position: relative;
-        top: 0px;
-        overflow: hidden;
-        width: 100%; }
-      .container.sandbox1 .right-panel .right-panel__statistics .port-table table {
-        margin: 0 0;
-        position: static;
-        width: calc(100% + 15px);
-        table-layout: fixed;
-        border-bottom: none; }
-      .container.sandbox1 .right-panel .right-panel__statistics .port-table thead {
-        height: 32px;
-        background-color: red;
-        position: absolute;
-        top: 8px;
-        width: 100%;
-        background-color: #264A60;
-        color: #fff;
-        display: table;
-        table-layout: fixed; }
-        .container.sandbox1 .right-panel .right-panel__statistics .port-table thead tr {
-          width: 100%; }
-        .container.sandbox1 .right-panel .right-panel__statistics .port-table thead th {
-          cursor: pointer; }
-          .container.sandbox1 .right-panel .right-panel__statistics .port-table thead th:hover {
-            background-color: #1f3c4e; }
-      .container.sandbox1 .right-panel .right-panel__statistics .port-table tfoot {
-        height: 32px;
-        background-color: red;
-        position: absolute;
-        bottom: 14px;
-        width: 100%;
-        display: table;
-        background-color: #C8D2D2;
-        color: #000;
-        table-layout: fixed; }
-        .container.sandbox1 .right-panel .right-panel__statistics .port-table tfoot tr td {
-          height: 32px; }
-      .container.sandbox1 .right-panel .right-panel__statistics .port-table tbody td {
-        height: 2rem; }
-      .container.sandbox1 .right-panel .right-panel__statistics .port-table th:nth-child(n+2) {
-        text-align: right; }
-      .container.sandbox1 .right-panel .right-panel__statistics .port-table td {
-        text-overflow: ellipsis;
-        overflow: hidden; }
-        .container.sandbox1 .right-panel .right-panel__statistics .port-table td:nth-child(n+2) {
-          text-align: right; }
-        .container.sandbox1 .right-panel .right-panel__statistics .port-table td.green {
-          color: #5AA700; }
-        .container.sandbox1 .right-panel .right-panel__statistics .port-table td.red {
-          color: #8C101C; }
+        .container.sandbox1 .right-panel .right-panel__statistics .port-table {
+          width: calc(100% + 15px);
+          margin-top: 16px;
+          height: calc(50vh - 60px - 56px - 76px);
+          overflow: auto;
+          margin: 32px 0 64px 0;
+          margin-top: 40px;
+          overflow: scroll;
+          position: static; }
+          .container.sandbox1 .right-panel .right-panel__statistics .port-table__wrapper {
+            position: relative;
+            top: 0px;
+            overflow: hidden;
+            width: 100%; }
+          .container.sandbox1 .right-panel .right-panel__statistics .port-table table {
+            margin: 0 0;
+            position: static;
+            width: calc(100% + 15px);
+            table-layout: fixed;
+            border-bottom: none; }
+          .container.sandbox1 .right-panel .right-panel__statistics .port-table thead {
+            height: 32px;
+            background-color: red;
+            position: absolute;
+            top: 8px;
+            width: 100%;
+            background-color: #264A60;
+            color: #fff;
+            display: table;
+            table-layout: fixed; }
+            .container.sandbox1 .right-panel .right-panel__statistics .port-table thead tr {
+              width: 100%; }
+            .container.sandbox1 .right-panel .right-panel__statistics .port-table thead th {
+              cursor: pointer; }
+              .container.sandbox1 .right-panel .right-panel__statistics .port-table thead th:hover {
+                background-color: #1f3c4e; }
+          .container.sandbox1 .right-panel .right-panel__statistics .port-table tfoot {
+            height: 32px;
+            background-color: red;
+            position: absolute;
+            bottom: 14px;
+            width: 100%;
+            display: table;
+            background-color: #C8D2D2;
+            color: #000;
+            table-layout: fixed; }
+            .container.sandbox1 .right-panel .right-panel__statistics .port-table tfoot tr td {
+              height: 32px; }
+          .container.sandbox1 .right-panel .right-panel__statistics .port-table tbody td {
+            height: 2rem; }
+          .container.sandbox1 .right-panel .right-panel__statistics .port-table th:nth-child(n+2) {
+            text-align: right; }
+          .container.sandbox1 .right-panel .right-panel__statistics .port-table td {
+            text-overflow: ellipsis;
+            overflow: hidden; }
+            .container.sandbox1 .right-panel .right-panel__statistics .port-table td:nth-child(n+2) {
+              text-align: right; }
+            .container.sandbox1 .right-panel .right-panel__statistics .port-table td.green {
+              color: #5AA700; }
+            .container.sandbox1 .right-panel .right-panel__statistics .port-table td.red {
+              color: #8C101C; }
+    
 
 .container.sandbox1 .loader {
   display: none;

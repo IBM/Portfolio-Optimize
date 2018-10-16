@@ -96,17 +96,52 @@
 img {
     border-radius: 50%;
    }
-
-
-#results {
-    border-collapse: collapse;
-
-}
+  
+  .port-table label {
+    text-align: center;
+  }
+  
+  .port-table label select {
+    max-width: 2.25rem;
+    display: inline;
+    height: auto;
+  }
+  
 #results td, #results th {
-    border: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
     padding: 8px;
 }
-#results tr:hover {background-color: #ddd;}
+/*#results tr:hover {background-color: #ddd;}*/
+
+#results tbody tr.even{
+	background-color: white;
+}
+
+#results tr.even:hover {
+  background-color: black;
+  color:white;
+}
+
+#results_info {
+  text-align: center;
+}
+
+#results_paginate {
+  text-align: center;
+}
+
+#results_paginate a {
+  padding: 3px;
+  color: blue;
+}
+#results tr.odd{
+  background-color: #F4F7FB;
+}
+
+#results tr.odd:hover {
+  background-color: black;
+  color:white;
+}
 #results th {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -134,10 +169,6 @@ h3 a:hover {
 }
 .btn-group-2 label.btn  {
      width: 33.3%;
-}
-
-body {
-    /* background-color:#DDE0E1;  */
 }
 
 .radio-text {
@@ -200,30 +231,3 @@ thead tr {
 thead tr td {
     height: 2rem;
 }
-
-
-/*
-.sandboxtwo .article-input .integrate {
-  height: 40px;
-  width: auto;
-  /*line-height: 40px;
-  box-sizing: border-box;
-  font-size: 16px;
-  /* padding: 0px 32px;
-  border: 1px solid white;
-  color: #330e0e;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  background-color: white; }
-
-.table_attr {
-     width: 50%; }
-
-.date a {
-  color: #868686;
-  font-size: 16px;
-  font-weight: 400;
-}*/
