@@ -33,6 +33,7 @@ host='0.0.0.0'
 
 # I couldn't add the services to this instance of the app so VCAP is empty
 # do this to workaround for now
+'''
 if 'VCAP_SERVICES' in os.environ:
     if str(os.environ['VCAP_SERVICES']) == '{}':
         print ('Using a file to populate VCAP_SERVICES')
@@ -49,13 +50,12 @@ if 'RUN_LOCAL' in os.environ:
     with open('VCAP.json') as data_file:
         data = json.load(data_file)
     os.environ['VCAP_SERVICES'] = json.dumps(data)
-
+'''
 #======================================MAIN PAGES======================================
 @app.route('/')
 def run():
-
     init()
-    return render_template('index.html')
+    return "Hello World."
 
 @app.route('/api/init') #refers to web address. when found...
 def init():

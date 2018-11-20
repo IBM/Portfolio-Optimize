@@ -18,7 +18,7 @@ import argparse
 from dotenv import load_dotenv
 import os
 import datetime
-
+'''
 #Initalize Investment Portfolio Service credentials to find on Bluemix otherwise from .env file
 if 'VCAP_SERVICES' in os.environ:
     vcap_servicesData = json.loads(os.environ['VCAP_SERVICES'])
@@ -38,7 +38,11 @@ else:
     IP_W_password=os.environ.get("CRED_PORTFOLIO_PWD_W")
     IP_R_username=os.environ.get("CRED_PORTFOLIO_USERID_R")
     IP_R_password=os.environ.get("CRED_PORTFOLIO_PWD_R")
-
+'''
+IP_W_username="jectselizeddevercelingui"
+IP_W_password="e1036635cf9ed00aec2c1ec2ee3589b2195fa4b7"
+IP_R_username="thureshistontherationeyi"
+IP_R_password="5863c448737092d933493966915800b4b9bed20e"
 def Get_Portfolios():
     """
     Retreives portfolio data by calling the Investment Portfolio service
