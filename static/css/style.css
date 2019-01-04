@@ -198,6 +198,20 @@ h3 a:hover {
   /*background-color: white; */
   background-color: #f9f9f9;  }
 
+  #white_button {
+    height: 40px;
+    width: auto;
+    /*line-height: 40px; */
+    box-sizing: border-box;
+    font-size: 16px;
+    /* padding: 0px 32px;  */
+    border: 2px solid #464646;
+    color: #464646;
+    user-select: none;
+    cursor: pointer;
+    font-weight: 600;
+    /*background-color: white; */
+    background-color: #f9f9f9;  }
 
 .tab-white {
   background-color: white;
