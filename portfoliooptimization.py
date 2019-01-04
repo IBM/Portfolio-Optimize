@@ -19,7 +19,7 @@ import argparse
 #from dotenv import load_dotenv
 import os
 import datetime
-'''
+
 #Initalize Investment Portfolio Service credentials to find on Bluemix otherwise from .env file
 if 'VCAP_SERVICES' in os.environ:
     vcap_servicesData = json.loads(os.environ['VCAP_SERVICES'])
@@ -35,9 +35,7 @@ else:
     load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
     uri=os.environ.get("CRED_OPTIMIZER_uri")
     accessToken=os.environ.get("CRED_OPTIMIZER_accessToken")
-'''
-uri = "https://fss-analytics.mybluemix.net/"
-accessToken="21124b48cae21fc9c02fb0d48399c79cbfb86afc61c2d673c3a3348b57cb4a1cb8090a92eea0766d71b7ecb20e78b06456e9b9c646facd40693ec4c45e4bbedd96ad2cdb33c084e7c1d8e53c97090b7c5aa8fa5f2ec8b040e90e30e2c184c17c3a077963799bb66f1a398fb32a53a05ab217588ba0468d5bc38d6819e0e5886e"
+
 def Optimize(payload):
     """
     Optimizes a portfolio based on a payload with the following information:
