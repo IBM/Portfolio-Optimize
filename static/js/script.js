@@ -314,7 +314,7 @@ function optimize(query){
                     $("#make_tradeit_trades").show();
                     $("#make_tradeit_trades").click(function() {
                       var redirect = "http://portfolio-tradeit.mybluemix.net";
-                      $.redirect(redirect, { postdata: JSON.stringify(all_tradeit_trades) });
+                      $.redirect(redirect, { postdata: JSON.stringify(all_tradeit_trades) }, "POST", "_blank");
                     });
                 },
                 error: function(jqXHR, textStatus, errorThrown) {
