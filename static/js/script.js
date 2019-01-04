@@ -207,6 +207,7 @@ function optimize(query){
                     console.log("Optimization Results :");
                     console.log(results);
                     //$('#results > tr').remove();
+                    var all_tradeit_trades = { trades: [] };
                     $('#difference').append('<br><br><p style="width: 75%"> An optimal portfolio was constructed with a volatility that differs from the benchmark by only '+ formatNumber(results.Metadata.ObjectiveValue,10)+'. The following are the trades required to arrive at this optimized portfolio and the resulting allocation:</p>');
                     var holdings_title = 'Results of the Optimization:';
                     $('.title1 h3').text(holdings_title);
@@ -234,6 +235,7 @@ function optimize(query){
                       var rowData="";
                       for (var i = 0; i < results.Holdings.length; i++) {
                         rowData+="<tr>";
+                        var tradeit_trade = {};
                         for(var j=0;j<tableCols.length;j++){
 
                           var value = results.Holdings[i][tableCols[j]];
@@ -257,23 +259,35 @@ function optimize(query){
                         }else if(tableCols[j] == "OptimizedTrade"){ //Trades to make
                             if(value<0){
                                 if(results.Holdings[i]["OptimizedTrade"] == -1*results.Holdings[i]["Quantity"]){
+                                    tradeit_trade.quantity = value.substring(1);
+                                    tradeit_trade.action = "sell";
                                     value = "Close this position."
                                     rowData+="<td>"+value+"</td>"; 
                                 }else{
+                                    tradeit_trade.quantity = value.substring(1);
+                                    tradeit_trade.action = "sell";
                                     value = "Sell "+value.substring(1)+" shares."
                                     rowData+="<td>"+value+"</td>"; 
                                 }
                             }else if(value>0){
+                                tradeit_trade.quantity = value;
+                                tradeit_trade.action = "buy";
                                 value = "Buy "+value+" shares."
                                 rowData+="<td>"+value+"</td>"; 
                             }else{
+                                tradeit_trade.quantity = value;
+                                tradeit_trade.action = "buy";
                                 rowData+="<td>"+value+"</td>"; 
                             }
                         }else{
+                            if (j == 0) {
+                              tradeit_trade.name = value;
+                            }
                             rowData+="<td>"+value+"</td>";
                         }
                          //owData+="<td>"+value+"</td>";
                         }
+                        all_tradeit_trades.trades.push(tradeit_trade);
                         rowData+="</tr>";
                       }
                       $(".port-table  tbody").html(rowData);
@@ -297,7 +311,11 @@ function optimize(query){
                     $("#section_four").hide();
                     $("#section_five").show();
                     //loadDisplay(4);
-
+                    $("#make_tradeit_trades").show();
+                    $("#make_tradeit_trades").click(function() {
+                      var redirect = "http://portfolio-tradeit.mybluemix.net";
+                      $.redirect(redirect, { postdata: JSON.stringify(all_tradeit_trades) }, "POST", "_blank");
+                    });
                 },
                 error: function(jqXHR, textStatus, errorThrown) {
                     $("#loader_section").hide();
