@@ -1,7 +1,7 @@
 **__Skill Level__**: Beginner
 <br>**__N.B__**: All services used in this repo are Lite plans.
 
-[![Build Status](https://travis-ci.org/IBM/Portfolio-Optmize.svg?branch=master)](https://travis-ci.org/IBM/Portfolio-Optimize)
+[![Build Status](https://travis-ci.org/IBM/Portfolio-Optimize.svg?branch=master)](https://travis-ci.org/IBM/Portfolio-Optimize)
 # Socially Responsible Investment Portfolio Construction
 
 In this developer journey, we will demonstrate how to collect information from a user to build a socially responsible portfolio that maintains the same risk and return profile of a standardized portfolio.
