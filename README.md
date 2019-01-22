@@ -32,7 +32,7 @@ Use the ``Deploy to IBM Cloud`` button **OR** create the services and run ``Run 
 
 ## Deploy to IBM Cloud
 
-[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM/Portfolio-Optimize)
+[![Deploy to IBM Cloud](https://cloud.ibm.com/devops/setup/deploy/button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/IBM/Portfolio-Optimize)
 
 
 **Note:** The code automatically prepopulates the Investment Portfolio service before running the front end.  This is done without use the typical raw curl command. See Step 6: [Initialize Investment Portfolio](#6-initalize-the-investment-portfolio-service) for more details.
@@ -55,15 +55,15 @@ Follow these steps to setup and run this developer journey. The steps are descri
 
 Clone the `Portfolio-Optimize` code locally. In a terminal, run:
 
-  `$ git clone https://github.com/IBM/Portfolio-Optimize.git`
+  `$ git clone https://github.com/IBM/Portfolio-Optimize`
 
 ## 2. Create IBM Cloud services
 
 __Create the following services:__
 You need to click on each link listed below, give it a name and create the service.
 
-* [**Investment Portfolio**](https://console.ng.bluemix.net/catalog/services/investment-portfolio)
-* [**Portfolio Optimization**](https://console.bluemix.net/catalog/services/portfolio-optimization)
+* [**Investment Portfolio**](https://cloud.ibm.com/catalog/services/investment-portfolio)
+* [**Portfolio Optimization**](https://cloud.ibm.com/catalog/services/portfolio-optimization)
 
 ## 3. Configure Manifest file
 
@@ -98,7 +98,7 @@ Create a `.env` file in the root directory of your clone of the project reposito
   cp .env.example .env
   ```
 
-  **NOTE** Most files systems regard files with a "." at the front as hidden files.  If you are on a Windows system, you should be able to use either [GitBash](https://git-for-windows.github.io/) or [Xcopy](https://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/xcopy.mspx?mfr=true)
+  **NOTE** Most files systems regard files with a "." at the front as hidden files.  If you are on a Windows system, you should be able to use either [GitBash](https://gitforwindows.org/) or [Xcopy](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/xcopy)
 
 You will need to update the credentials with the IBM Cloud credentials for each of the services you created in [Step 2](#2-create-bluemix-services).
 
@@ -137,13 +137,13 @@ Some points to note:
 
 You have the ability to initalize the application by accessing the initialize endpoint in your browser by navigating to <http://0.0.0.0:8080/api/init>.
 
-Find more information on Investment Portfolio api calls [here](https://console.ng.bluemix.net/apidocs/751-investment-portfolio?&language=node#introduction).
+Find more information on Investment Portfolio api calls [here](https://cloud.ibm.com/apidocs/751-investment-portfolio?&language=node#introduction).
 
 *Note that accessing the `/api/reset` endpoint will delete all of the portfolios in the service that the `/api/init` endpoint created. You can always start over this way, but be careful to not access this if you've done considerable work.*
 
 #7. Learn More
-[Big Data and Analytics Hub](http://www.ibmbigdatahub.com/tag/2679)
-[Data & Analytics Architecture](https://www.ibm.com/cloud/garage/content/architecture/dataAnalyticsArchitecture)
+[Big Data and Analytics Hub](https://www.ibmbigdatahub.com/tag/2679)
+[Data & Analytics Architecture](https://www.ibm.com/cloud/garage/architectures/dataAnalyticsArchitecture)
 
 # Troubleshooting
 
@@ -162,7 +162,7 @@ python PortfolioOptimization.py
 
 ## Privacy Notice
 
-This web application includes code to track deployments to [IBM Cloud](https://www.bluemix.net/) runtimes and services. The following information is sent to a [Metrics Tracker](https://github.com/IBM/metrics-collector-service) service on each deployment:
+This web application includes code to track deployments to [IBM Cloud](https://console.bluemix.net) runtimes and services. The following information is sent to a [Metrics Tracker](https://github.com/IBM/metrics-collector-service) service on each deployment:
 
 * Application Name (`application_name`)
 * Application GUID (`application_id`)
@@ -179,18 +179,18 @@ This data is collected from the `VCAP_APPLICATION` and `VCAP_SERVICES` environme
 
 ## <h2>Learn more</h2>
 <ul>
-<li><strong>Artificial Intelligence Code Patterns</strong>: Enjoyed this Code Pattern? Check out our other <a href="https://developer.ibm.com/code/technologies/artificial-intelligence/" rel="nofollow">AI Code Patterns</a>.</li>
-<li><strong>Data Analytics Code Patterns</strong>: Enjoyed this Code Pattern? Check out our other <a href="https://developer.ibm.com/code/technologies/data-science/" rel="nofollow">Data Analytics Code Patterns</a></li>
+<li><strong>Artificial Intelligence Code Patterns</strong>: Enjoyed this Code Pattern? Check out our other <a href="https://developer.ibm.com/technologies/artificial-intelligence/" rel="nofollow">AI Code Patterns</a>.</li>
+<li><strong>Data Analytics Code Patterns</strong>: Enjoyed this Code Pattern? Check out our other <a href="https://developer.ibm.com/technologies/data-science/" rel="nofollow">Data Analytics Code Patterns</a></li>
 <li><strong>AI and Data Code Pattern Playlist</strong>: Bookmark our <a href="https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde" rel="nofollow">playlist</a> with all of our Code Pattern videos</li>
 <li><strong>With Watson</strong>: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? <a href="https://www.ibm.com/watson/with-watson/" rel="nofollow">Join the With Watson program</a> to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.</li>
-<li><strong>Watson Studios</strong>: Master the art of data science with IBM's <a href="https://datascience.ibm.com/" rel="nofollow">Watson Studios</a></li>
+<li><strong>Watson Studios</strong>: Master the art of data science with IBM's <a href="https://www.ibm.com/cloud/watson-studio" rel="nofollow">Watson Studios</a></li>
 <li><strong>PowerAI</strong>: Get started or get scaling, faster, with a software distribution for machine learning running on the Enterprise Platform for AI: <a href="https://www.ibm.com/ms-en/marketplace/deep-learning-platform" rel="nofollow">IBM Power Systems</a></li>
-<li><strong>Spark on IBM Cloud</strong>: Need a Spark cluster? Create up to 30 Spark executors on IBM Cloud with our <a href="https://console.bluemix.net/catalog/services/apache-spark" rel="nofollow">Spark service</a></li>
-<li><strong>Kubernetes on IBM Cloud</strong>: Deliver your apps with the combined the power of <a href="https://www.ibm.com/cloud-computing/bluemix/containers" rel="nofollow">Kubernetes and Docker on IBM Cloud</a></li>
+<li><strong>Spark on IBM Cloud</strong>: Need a Spark cluster? Create up to 30 Spark executors on IBM Cloud with our <a href="https://cloud.ibm.com/catalog/services/apache-spark" rel="nofollow">Spark service</a></li>
+<li><strong>Kubernetes on IBM Cloud</strong>: Deliver your apps with the combined the power of <a href="https://www.ibm.com/cloud/container-service" rel="nofollow">Kubernetes and Docker on IBM Cloud</a></li>
 </ul>
 
 # License
 
-This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](http://www.apache.org/licenses/LICENSE-2.0.txt).
+This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
-[Apache Software License (ASL) FAQ](http://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
+[Apache Software License (ASL) FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
